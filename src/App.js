@@ -4,6 +4,9 @@ import About from './components/about';
 
 import './App.css';
 import RootLayouts from './layouts/RootLayouts';
+import HelpLayout from './layouts/HelpLayout';
+import Faq from './components/help/Faq';
+import Contact from './components/help/Contact';
 
 const router= createBrowserRouter(
   createRoutesFromElements(
@@ -11,9 +14,10 @@ const router= createBrowserRouter(
 <Route index element={<Home></Home>}></Route>
 <Route path="/about" element={<About></About>}></Route>
 
-<Route path="/help" element={<Home></Home>}>
+<Route path="/help" element={HelpLayout}>
+<Route path="/faq" element={Faq}></Route>
+<Route path="/contact" element={Contact}></Route>
 
-  
 </Route>
 
 </Routes>
