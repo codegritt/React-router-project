@@ -5,10 +5,12 @@ export default function Contact(){
             <form>
                 <label>
                     <span>Your email:</span>
+                    <input type="email" name="email" required/>
                   
                 </label>
                 <label>
                     <span>Your message:</span>
+                    <textarea type="text" required/>
                   
                 </label>
                 <button>Submit</button>
