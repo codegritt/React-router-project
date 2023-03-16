@@ -2,16 +2,14 @@ import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
-  RouterProvider,
+  RouterProvider
 } from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
 
 import "./App.css";
 import RootLayouts from "./layouts/RootLayouts";
-import HelpLayout from "./layouts/HelpLayout";
-import Faq from "./components/help/Faq";
-import Contact from "./components/help/Contact";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,10 +17,10 @@ const router = createBrowserRouter(
       <Route index element={<Home></Home>}></Route>
       <Route path="about" element={<About></About>}></Route>
 
-      <Route path="help" element={<HelpLayout></HelpLayout>}>
+      {/* <Route path="help" element={<HelpLayout></HelpLayout>}>
         <Route path="faq" element={<Faq></Faq>}></Route>
         <Route path="contact" element={<Contact></Contact>}></Route>
-      </Route>
+      </Route> */}
     </Route>
   )
 );

@@ -8,7 +8,7 @@ export default function RootLayouts(){
  <header>
  <nav>
    <h1>React router</h1>
-   <NavLink to={""}>Home</NavLink>
+   <NavLink to={"/"}>Home</NavLink>
    <br></br>
    <br></br>
    <NavLink to={"about"}>About</NavLink>
